@@ -1,0 +1,232 @@
+/* Global styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom right, #6ab04c, #ff9ff3);
+    color: #fff;
+    box-sizing: border-box;
+}
+
+header, footer {
+    padding: 20px;
+}
+
+.header {
+    background: #f8c291;
+    color: #2f3640;
+    text-align: center;
+    padding: 20px;
+    animation: fadeIn 2s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.navigation ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.navigation ul li a {
+    color: #f4f4f4; /* Lighter text color */
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    position: relative;
+}
+
+.navigation ul li a:hover {
+    text-shadow: 0 0 8px #fff;
+}
+
+.navigation ul li.dropdown {
+    position: relative;
+}
+
+.navigation ul li.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.navigation ul li .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #333;
+    border-radius: 5px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 10px 0;
+    z-index: 1;
+}
+
+.navigation ul li .dropdown-menu li {
+    padding: 8px 20px;
+}
+
+.navigation ul li .dropdown-menu li a {
+    color: #f4f4f4;
+    font-weight: normal;
+}
+
+.navigation ul li .dropdown-menu li a:hover {
+    background: #575757;
+}
+
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    margin: 20px;
+    animation: slideIn 1.5s ease-out;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.posts {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.post-preview {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    transition: transform 0.3s, background 0.3s;
+}
+
+.post-preview:hover {
+    transform: translateY(-10px);
+    background: rgba(255, 255, 255, 0.4);
+}
+
+footer {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 10px;
+}
+
+/* Comment Section */
+.comment-section {
+    background: #f8c291;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+}
+
+.comment-section h3 {
+    color: #2f3640;
+    font-size: 1.5rem;
+}
+
+.comment-section input,
+.comment-section textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+}
+
+.comment-section input:focus,
+.comment-section textarea:focus {
+    border-color: #6ab04c;
+    outline: none;
+}
+
+.comment-section button {
+    background: #6ab04c;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.comment-section button:hover {
+    background: #4a9c3f;
+}
+
+/* Comment box */
+.comments-display {
+    margin-top: 20px;
+    background: #fff;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.comment {
+    margin-bottom: 10px;
+    padding: 10px;
+    background: #f9f9f9;
+    border-left: 4px solid #6ab04c;
+    border-radius: 8px;
+}
+
+.comment strong {
+    color: #6ab04c;
+    font-weight: bold;
+}
+/* Global styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom right, #6ab04c, #ff9ff3);
+    color: #fff;
+    box-sizing: border-box;
+}
+
+header, footer {
+    padding: 20px;
+}
+
+.header {
+    color: #f4f4f4; /* Lighter text color */
+    text-align: center;
+    padding: 20px;
+    background-size: cover;
+    background-position: center;
+    animation: fadeIn 2s ease-in;
+}
+
+
+/* Other CSS rules remain the same... */
+
+/* Footer */
+footer {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 10px;
+}
+
+footer p {
+    margin: 0;
+}
